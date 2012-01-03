@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QUnit Test Runner</title>
+    <link rel="stylesheet" href="assets/qunit/qunit_styles.css">
+  </head>
+  <body>
+    <h1 id="qunit-header"></h1>
+    <h2 id="qunit-banner"></h2>
+    <div id="qunit-testrunner-toolbar"></div>
+    <h2 id="qunit-userAgent"></h2>
+    <ol id="qunit-tests"></ol>
+    <div id="qunit-fixture">test markup, will be hidden</div>
+    <script src="assets/bpm_libs.js"></script>
+    <script src="assets/qunit/qunit_libs.js"></script>
+    <script>spade.require('sproutcore-datetime');</script>
+    <script src="assets/sproutcore-datetime/bpm_tests.js"></script>
+    <script>
+      var package = 'sproutcore-datetime/~tests/datetime_test';
+      spade.require(package);
+      console.log("QUnit Test Runner - Loading spade package "+package);
+    </script>
+  </body>
+</html>

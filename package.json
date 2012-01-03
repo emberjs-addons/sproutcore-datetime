@@ -1,0 +1,35 @@
+{
+  "bpm": "1.0.0",
+  "name": "sproutcore-datetime",
+  "summary": "Ember DateTime",
+  "description": "A rich date time class with utilities",
+  "homepage": "http://emberjs.com",
+  "author": "Strobe Inc., Apple, Inc., and contributors",
+  "version": "0.9.3",
+  "dependencies": {
+    "jquery": ">= 0",
+    "spade": "~> 1.0.0",
+    "ember-runtime": "0.9.3"
+  },
+
+  "directories": {
+    "lib": "lib"
+  },
+
+  "dependencies:development": {
+    "spade-qunit": "~> 1.0.0"
+  },
+
+  "bpm:build": {
+
+    "bpm_libs.js": {
+      "files": ["lib"],
+      "modes": "*"
+    },
+
+    "sproutcore-datetime/bpm_tests.js": {
+      "files": ["tests"],
+      "modes": ["debug"]
+    }
+  }
+}
